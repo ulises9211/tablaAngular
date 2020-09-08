@@ -1,0 +1,39 @@
+{
+  "usuarios": [
+    {
+      "userId": 1,
+      "id": 1,
+      "name": "tuercas",
+      "cantidad": 96,
+      "precio": 3
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "name": "tornillos",
+      "cantidad": 998,
+      "precio": 2
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "name": "taladros",
+      "cantidad": 0,
+      "precio": 1200
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "name": "pinzas",
+      "cantidad": 100,
+      "precio": 120
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "name": "taquetes",
+      "cantidad": 1000,
+      "precio": 12
+    }
+  ]
+}
