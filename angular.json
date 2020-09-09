@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tabla2Angular"
+    }
+  },
+  "defaultProject": "tabla2Angular",
+  "cli": {
+    "analytics": "d894dad9-32fd-44dd-a73f-6edb503e4987"
+  }
 }

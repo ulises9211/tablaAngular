@@ -4,15 +4,15 @@
       "userId": 1,
       "id": 1,
       "name": "tuercas",
-      "cantidad": 96,
+      "cantidad": 76,
       "precio": 3
     },
     {
       "userId": 1,
       "id": 2,
-      "name": "tornillos",
-      "cantidad": 998,
-      "precio": 2
+      "name": "tuercas",
+      "cantidad": 89,
+      "precio": 3
     },
     {
       "userId": 1,

@@ -1,0 +1,37 @@
+<div class="container">
+    <h3>Listado productos</h3>
+    <hr>
+    <app-search (newItemEvent)="buscar($event)"></app-search>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">User ID</th>
+            <th scope="col">Cantidad Actual</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of data | buscador: valor; let i = index">
+            <th scope="row">{{d.id}}</th>
+            <td>{{d.nombre}}</td>
+            <td>{{d.cantidad}}</td>
+            <td>{{d.precio}}</td>
+            <td>
+              <input name="cantidad" 
+                      type="text" 
+                      class="form-control"
+                      #cantidad />
+            </td>
+            <td>
+              <button class="btn btn-primary" (click)="agregar(d, cantidad.value, d.cantidad, i, d.precio)"
+              (click)="cantidad.value = ''">+</button>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+</div>
+<button class="btn btn-primary" (click)="ventas()">Ventas</button>

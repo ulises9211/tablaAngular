@@ -1,0 +1,25 @@
+<h1>Agregados</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">User ID</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data">
+        <th>{{d.id}}</th>
+        <td>{{d.name}}</td>
+        <td>{{d.userId}}</td>
+        <td>{{d.cantidad}}</td>
+        <td>{{d.precio}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <label>Total: ${{total}}</label><br><br>
+  <button class="btn btn-danger m-2" (click)="limpiar()">Limpiar</button>
+  <button class="btn btn-primary m-2" (click)="comprar()" [disabled]="data.length === 0">Comprar</button>
+<
